@@ -176,27 +176,7 @@ Confirm:
 
 Get Public IP:
 
-``
 
----
-
-## Docker Deployment on EC2
-
-Docker is automatically installed through Terraform user-data script.
-
-Containers started:
-
-```bash
-docker run -d -p 3001:3001 USERNAME/user-service
-
-docker run -d -p 3002:3002 USERNAME/product-service
-
-docker run -d -p 3003:3003 USERNAME/cart-service
-
-docker run -d -p 3004:3004 USERNAME/order-service
-
-docker run -d -p 80:3000 USERNAME/frontend
-```
 
 ---
 
@@ -208,20 +188,22 @@ Verify containers:
 docker ps
 ```
 
+<img width="1130" height="119" alt="Screenshot 2026-06-15 at 2 02 56 AM" src="https://github.com/user-attachments/assets/97d33669-a4ef-4f55-b984-0fcfaa9e0a86" />
+
+
 Verify frontend:
 
 ```text
 http://PUBLIC_IP
 ```
+<img width="551" height="237" alt="Screenshot 2026-06-15 at 5 15 45 AM" src="https://github.com/user-attachments/assets/9298d788-a8eb-43d5-bee4-d071c22caf35" />
 
 Verify backend services:
 
-```text
-http://PUBLIC_IP:3001
-http://PUBLIC_IP:3002
-http://PUBLIC_IP:3003
-http://PUBLIC_IP:3004
-```
+<img width="1720" height="1039" alt="Screenshot 2026-06-15 at 1 59 54 AM" src="https://github.com/user-attachments/assets/c7b454ab-a2e1-4ec4-ac66-15e1a85a778c" />
+
+<img width="585" height="116" alt="Screenshot 2026-06-15 at 1 59 11 AM" src="https://github.com/user-attachments/assets/fbbbefd5-cffd-4b57-b315-97ee3092f2fa" />
+
 
 ---
 
@@ -240,10 +222,7 @@ E-CommerceStore/
 │
 ├── terraform/
 │   ├── main.tf
-│   ├── variables.tf
-│   ├── outputs.tf
-│   ├── terraform.tfvars
-│   └── userdata.sh
+│   
 │
 └── README.md
 ```
@@ -263,6 +242,20 @@ Confirm:
 ```text
 yes
 ```
+
+<img width="661" height="325" alt="Screenshot 2026-06-15 at 5 05 08 AM" src="https://github.com/user-attachments/assets/0abee856-2279-472c-a5bb-62f8a2f1d9c2" />
+
+
+<img width="1470" height="309" alt="Screenshot 2026-06-15 at 5 05 57 AM" src="https://github.com/user-attachments/assets/f0e28736-0b3d-4674-8d16-83c87b575aef" />
+
+<img width="851" height="761" alt="Screenshot 2026-06-15 at 5 07 22 AM" src="https://github.com/user-attachments/assets/8c1b75de-03d9-4ee8-b611-c1d614957c1b" />
+
+
+<img width="1483" height="390" alt="Screenshot 2026-06-15 at 5 07 37 AM" src="https://github.com/user-attachments/assets/30df33e9-9f73-443d-9615-a8f72e964a27" />
+
+
+<img width="1436" height="319" alt="Screenshot 2026-06-15 at 5 08 21 AM" src="https://github.com/user-attachments/assets/339d5d0c-53e6-40a9-a671-bdf6a414193d" />
+
 
 This prevents unnecessary AWS charges.
 
