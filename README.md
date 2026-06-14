@@ -141,6 +141,10 @@ docker push USERNAME/order-service:latest
 
 docker push USERNAME/frontend:latest
 ```
+<img width="1439" height="771" alt="Screenshot 2026-06-15 at 5 19 19 AM" src="https://github.com/user-attachments/assets/c8383d87-5196-4a23-800c-d4f83ef1b907" />
+
+<img width="1437" height="519" alt="Screenshot 2026-06-15 at 5 19 30 AM" src="https://github.com/user-attachments/assets/66df685f-18c8-479c-b407-93752807f402" />
+
 
 ---
 
