@@ -88,21 +88,6 @@ Configure AWS CLI:
 aws configure
 ```
 
-Provide:
-
-```text
-AWS Access Key ID
-AWS Secret Access Key
-Region = ap-south-1
-Output = json
-```
-
-Verify:
-
-```bash
-aws sts get-caller-identity
-```
-
 ---
 
 ## Docker Image Creation
@@ -111,43 +96,13 @@ Build Docker images for all services.
 
 ### User Service
 
-```bash
-cd backend/user-service
-
-docker build -t user-service .
-```
-
 ### Product Service
-
-```bash
-cd backend/product-service
-
-docker build -t product-service .
-```
 
 ### Cart Service
 
-```bash
-cd backend/cart-service
-
-docker build -t cart-service .
-```
-
 ### Order Service
 
-```bash
-cd backend/order-service
-
-docker build -t order-service .
-```
-
 ### Frontend
-
-```bash
-cd frontend
-
-docker build -t frontend .
-```
 
 ---
 
@@ -207,33 +162,13 @@ Terraform provisions:
 
 Initialize Terraform:
 
-```bash
-terraform init
-```
-
 Validate:
-
-```bash
-terraform validate
-```
 
 Review Plan:
 
-```bash
-terraform plan
-```
-
 Create Infrastructure:
 
-```bash
-terraform apply
-```
-
 Confirm:
-
-```text
-yes
-```
 
 ---
 
@@ -241,21 +176,7 @@ yes
 
 Get Public IP:
 
-```bash
-terraform output
-```
-
-Example:
-
-```text
-public_ip = 13.233.xx.xx
-```
-
-Access:
-
-```text
-http://13.233.xx.xx
-```
+``
 
 ---
 
